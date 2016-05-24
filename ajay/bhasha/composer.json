@@ -1,0 +1,41 @@
+{
+    "name": "ajay/bhasha",
+    "type": "phpbb-extension",
+    "description": "An extension which allows you to convert the indian language in your own for your phpBB forum",
+    "homepage": "https://www.phpbb.com",
+    "version": "1.0.0",
+    "keywords": [
+        "phpbb",
+        "extension",
+        "convert"
+    ],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Ajay Kumar Chaudhary",
+            "homepage": "https://studentforum.co.in",
+            "email": "ajay@studentforum.co.in",
+            "role": "Extensions Writer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0",
+        "phpbb/phpbb": ">=3.1.9,<3.2.0@dev"
+    },
+    "require-dev": {
+        "phing/phing": "2.4.*",
+        "phpbb/epv": "dev-master"
+    },
+    "extra": {
+        "display-name": "Bhasha Parivartan",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.9,<3.2.0@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/bhasha",
+            "filename": "version_check"
+        }
+    }
+}
