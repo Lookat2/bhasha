@@ -1,0 +1,3 @@
+ajay_bhasha_controller:
+    path: /bhasha
+    defaults: { _controller: ajay.bhasha.controller:main }
