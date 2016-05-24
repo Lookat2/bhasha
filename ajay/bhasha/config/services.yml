@@ -1,0 +1,9 @@
+services:
+    ajay.bhasha.event.listener:
+        class: ajay\bhasha\event\listener
+        arguments:
+            - @controller.helper
+            - @template
+            - @config
+        tags:
+            - { name: event.listener }
