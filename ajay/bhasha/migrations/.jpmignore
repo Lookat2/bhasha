@@ -1,8 +1,0 @@
-.*
-*
-!/migrations/main.js
-!/event/myModule.js
-!/event/myTables.json
-!/package.json
-!/bootstrap.js
-!/install.rdf
