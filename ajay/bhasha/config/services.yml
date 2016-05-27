@@ -1,0 +1,49 @@
+imports:
+    - { resource: tables.yml }
+services:
+    ajay.bhasha.migrations.data.myTables:
+        class: ajay\bhasha\migrations\data\myTables
+        arguments:
+            - @config
+            - @controller.helper
+            - @request
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - %core.php_ext%
+    ajay.bhasha.migrations.lib.myModule:
+        class: ajay\bhasha\migrations\lib\myModule
+        arguments:
+            - @config
+            - @controller.helper
+            - @request
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - %core.php_ext%
+    ajay.bhasha.migrations.lib.main:
+        class: ajay\bhasha\migrations\lib\main
+        arguments:
+            - @config
+            - @controller.helper
+            - @request
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - %core.php_ext%
+    ajay.bhasha.listener:
+        class: ajay\bhasha\event\listener
+        arguments:
+            - @config
+            - @controller.helper
+            - @request
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
