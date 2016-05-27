@@ -1,0 +1,2 @@
+parameters:
+    ajay.bhasha.tables.bhasha: %core.table_prefix%bhasha
