@@ -1,0 +1,11 @@
+    ajay.bhasha.listener:
+        class: ajay\bhasha\event\listener
+        arguments:
+            - @request
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - @config
+        tags:
+            - { name: event.listener }
